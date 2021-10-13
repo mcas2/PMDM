@@ -1,4 +1,4 @@
-package Ejercicio01;
+package Ejercicio01;.nextLine()
 /*
 Codifica la jerarquía ser vivo, animal y vegetal, creando las estructuras que consideres necesario
 para almacenar de cada elemento, como mínimo, nombre científico, nombre común.
