@@ -1,5 +1,6 @@
 package SupuestosPrácticosRepaso;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 //Cifrado César. Se trata de trasponer posiciones.
@@ -9,9 +10,9 @@ public class Ejercicio07 {
         Scanner sc = new Scanner(System.in);
         System.out.println("¿Cuál es tu clave?");
         int clave = sc.nextInt();
-        
+        sc.nextLine();
         System.out.println("Introduce tu mensaje.");
-        String mensaje = sc.nextLine();
+        String mensaje = sc.nextLine().toUpperCase(Locale.ROOT);
 
         char [] cifrado = Cifrar(mensaje, clave);
 

@@ -16,33 +16,35 @@ public class Ejercicio06 {
                 "\nIntroduce la opción y los operandos. (Solo uno en la raiz cuadrada)");
 
         int calculo = 0;
+
         try {
             calculo = sc.nextInt();
+
+            int num1 = sc.nextInt();
+            int num2 = 0;
+            if (calculo!=5)  {
+                num2 = sc.nextInt();
+        }
+            switch (calculo) {
+                case 1:
+                    System.out.println(Suma(num1, num2));
+                    break;
+                case 2:
+                    System.out.println(Resta(num1, num2));
+                    break;
+                case 3:
+                    System.out.println(Multiplicacion(num1, num2));
+                    break;
+                case 4:
+                    System.out.println(Division(num1, num2));
+                    break;
+                case 5:
+                    System.out.println(Raiz(num1));
+                    break;
+            }
         } catch (InputMismatchException e) {
             e.printStackTrace();
-        }
-        int num1 = sc.nextInt();
-        int num2 = 0;
-        if (calculo!=5)  {
-            num2 = sc.nextInt();
-        }
-
-        switch (calculo) {
-            case 1:
-                System.out.println(Suma(num1, num2));
-                break;
-            case 2:
-                System.out.println(Resta(num1, num2));
-                break;
-            case 3:
-                System.out.println(Multiplicacion(num1, num2));
-                break;
-            case 4:
-                System.out.println(Division(num1, num2));
-                break;
-            case 5:
-                System.out.println(Raiz(num1));
-                break;
+            System.out.println("Error");
         }
     }
 
